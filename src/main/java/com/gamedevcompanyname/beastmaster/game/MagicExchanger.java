@@ -1,21 +1,19 @@
 package com.gamedevcompanyname.beastmaster.game;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Queue;
 
 public class MagicExchanger implements MagicExchangerInterface {
 
-    final InteractiveConsole console;
+    InteractiveConsole console;
     private StringBuilder lastOutput = new StringBuilder();
     private Thread talking;
     private Queue<String> inputs = new ArrayDeque<>();
 
     public MagicExchanger() {
-        this.console = new InteractiveConsole(this);
         talking = new Thread(() -> {
             while (true){
+                console = new InteractiveConsole(this);
                 console.conversate();
             }
         });
