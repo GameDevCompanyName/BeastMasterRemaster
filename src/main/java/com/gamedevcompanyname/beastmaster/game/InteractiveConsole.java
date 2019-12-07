@@ -648,7 +648,6 @@ public class InteractiveConsole {
     }
 
     private static void sleep(int time){
-        System.out.println("asdasdasd");
 //        try {
 //            Thread.sleep((int) (time / GAME_SPEED));
 //        } catch (InterruptedException e) {

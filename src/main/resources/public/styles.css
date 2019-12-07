@@ -78,6 +78,11 @@ h1 {
 .event {
     display: inline-block;
     width: auto;
+    transition: 1s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.04);
 }
 
 .event:nth-child(2) {
