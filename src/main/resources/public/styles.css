@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 50px;
+
+    background: linear-gradient(90deg, #124550, #3e2414);
+    background-size: 400vh 400vw;
+
+    -webkit-animation: animatedBackground 8s ease infinite;
+    -moz-animation: animatedBackground 8s ease infinite;
+    -o-animation: animatedBackground 8s ease infinite;
+    animation: animatedBackground 8s ease infinite;
+}
+
+@-webkit-keyframes animatedBackground {
+    0%{background-position:67% 0%}
+    50%{background-position:34% 100%}
+    100%{background-position:67% 0%}
+}
+@-moz-keyframes animatedBackground {
+    0%{background-position:67% 0%}
+    50%{background-position:34% 100%}
+    100%{background-position:67% 0%}
+}
+@-o-keyframes animatedBackground {
+    0%{background-position:67% 0%}
+    50%{background-position:34% 100%}
+    100%{background-position:67% 0%}
+}
+@keyframes animatedBackground {
+    0%{background-position:67% 0%}
+    50%{background-position:34% 100%}
+    100%{background-position:67% 0%}
+}
+
+.blank {
+    visibility: hidden;
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: "Liberation Mono", monospace;
+    text-align: center;
+    margin: 30px;
+}
+
+#mainInput {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 30vw;
+    margin-right: 15px;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#mainButton {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    color: wheat;
+    background-color: dimgrey;
+}
+
+.event {
+    display: inline-block;
+    width: auto;
+}
+
+.event:nth-child(2) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.event:nth-child(2) > .wrapper {
+    background: rgba(255, 35, 139, 0.07);
+}
+
+.wrapper {
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-wrap: break-word;
+    font-family: "Liberation Mono", monospace;
+    font-size: 12pt;
+    margin: 20px;
+    display: inline-block;
+    background-color: rgba(59, 67, 255, 0.07);
+}
